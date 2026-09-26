@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <title>Security — PrivateMoment</title>
+  <meta name="description" content="How PrivateMoment protects your private photos, videos, notes, metadata, and encrypted backups on iPhone." />
+  <link rel="canonical" href="https://yuege.online/private-moments/security/" />
+  <style>
+    :root {
+      --bg: #09090b;
+      --surface: #111114;
+      --surface-2: #17171b;
+      --text: #f5f5f7;
+      --muted: #a6a6ad;
+      --line: rgba(255,255,255,.10);
+      --accent: #b8a7ff;
+      --accent-2: #7dd3fc;
+      --ok: #8ee3a3;
+      --shadow: 0 18px 60px rgba(0,0,0,.28);
+      --radius: 24px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 500px at 15% -10%, rgba(184,167,255,.16), transparent 60%),
+        radial-gradient(800px 460px at 92% 12%, rgba(125,211,252,.10), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(9,9,11,.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      background:
+        linear-gradient(135deg, rgba(184,167,255,.98), rgba(125,211,252,.88));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.25), 0 8px 30px rgba(147,128,255,.18);
+      position: relative;
+    }
+
+    .mark::after {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border-radius: 50%;
+      border: 2px solid rgba(9,9,11,.72);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--text); }
+
+    .hero {
+      padding: 112px 0 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.035);
+      color: #d9d9df;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--ok);
+      box-shadow: 0 0 16px rgba(142,227,163,.55);
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 24px auto 20px;
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: .98;
+      letter-spacing: -.055em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(18px, 2.5vw, 23px);
+      line-height: 1.55;
+    }
+
+    .principles {
+      margin-top: 48px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 999px;
+      padding: 9px 13px;
+      color: #d6d6dc;
+      font-size: 14px;
+    }
+
+    .section { padding: 52px 0; }
+
+    .section-head {
+      max-width: 730px;
+      margin-bottom: 28px;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 4.5vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: -.02em;
+    }
+
+    p { margin: 0 0 1em; }
+
+    .muted { color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      grid-column: span 6;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .card.wide { grid-column: span 12; }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      margin-bottom: 18px;
+      background: rgba(184,167,255,.11);
+      border: 1px solid rgba(184,167,255,.22);
+      font-size: 20px;
+    }
+
+    .card p { color: var(--muted); margin-bottom: 0; }
+
+    .arch {
+      margin-top: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #0d0d10;
+      padding: 26px;
+      overflow-x: auto;
+    }
+
+    .flow {
+      min-width: 760px;
+      display: grid;
+      grid-template-columns: 1fr 42px 1fr 42px 1fr 42px 1.2fr;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .node {
+      min-height: 102px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface-2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .node strong { display: block; margin-bottom: 4px; }
+    .node span { color: var(--muted); font-size: 13px; }
+    .arrow { color: #777782; text-align: center; font-size: 22px; }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px 22px;
+      margin-top: 18px;
+    }
+
+    .item {
+      display: flex;
+      gap: 10px;
+      color: #d8d8dd;
+      align-items: flex-start;
+    }
+
+    .check {
+      color: var(--ok);
+      font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .callout {
+      border: 1px solid rgba(184,167,255,.22);
+      background: linear-gradient(135deg, rgba(184,167,255,.10), rgba(125,211,252,.055));
+      border-radius: 28px;
+      padding: 34px;
+    }
+
+    .callout h2 { max-width: 800px; }
+
+    .fine {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: #81818a;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 22px 0 46px;
+      color: #81818a;
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .wrap { width: min(calc(100% - 28px), var(--max)); }
+      .nav-links { display: none; }
+      .hero { padding-top: 78px; }
+      .card, .card.wide { grid-column: span 12; }
+      .list { grid-template-columns: 1fr; }
+      .callout { padding: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/private-moments/" aria-label="PrivateMoment home">
+        <span class="mark" aria-hidden="true"></span>
+        <span>PrivateMoment</span>
+      </a>
+      <div class="nav-links" aria-label="Security page navigation">
+        <a href="#encryption">Encryption</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#backup">Backup</a>
+        <a href="#limits">What we can't do</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero wrap">
+      <div class="eyebrow"><span class="dot"></span> Security by design</div>
+      <h1>Your private moments stay yours.</h1>
+      <p>
+        PrivateMoment protects photos, videos, notes and metadata locally on your iPhone.
+        No account. No PrivateMoment cloud. No ads. No analytics tracking.
+      </p>
+      <div class="principles" aria-label="Core privacy principles">
+        <span class="pill">Local encryption</span>
+        <span class="pill">No account</span>
+        <span class="pill">No server storage</span>
+        <span class="pill">No analytics</span>
+        <span class="pill">User-controlled backup</span>
+      </div>
+    </header>
+
+    <section class="section wrap" id="encryption">
+      <div class="section-head">
+        <div class="kicker">Encryption</div>
+        <h2>Real encryption, not just hidden files.</h2>
+        <p class="muted">
+          PrivateMoment does not rely on putting ordinary photos inside an app sandbox.
+          Sensitive vault content is encrypted with authenticated AES-GCM encryption.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true">◈</div>
+          <h3>Vault content is encrypted</h3>
+          <p>Photos, videos, thumbnails, Moment titles, notes and vault metadata are protected rather than stored as ordinary readable content.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌁</div>
+          <h3>Chunked media encryption</h3>
+          <p>Large media is processed in bounded chunks, avoiding the need to treat an entire photo or video as one large plaintext object.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">#</div>
+          <h3>PIN protects the vault key</h3>
+          <p>Your 6-digit PIN is not stored as readable text. Argon2id derives a key-encryption key that protects the randomly generated Vault Master Key.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">◎</div>
+          <h3>Face ID stays device-local</h3>
+          <p>Face ID can provide convenient local unlocking. Your PIN remains the portable credential used for encrypted backup recovery.</p>
+        </article>
+      </div>
+
+      <div class="arch" aria-label="PrivateMoment key architecture">
+        <div class="flow">
+          <div class="node">
+            <strong>6-digit PIN</strong>
+            <span>Never stored as plaintext</span>
+          </div>
+          <div class="arrow">→</div>
+          <div class="node">
+            <strong>Argon2id</strong>
+            <span>Memory-hard key derivation</span>
+          </div>
+          <div class="arrow">→</div>
+          <div class="node">
+            <strong>KEK</strong>
+            <span>Key Encryption Key</span>
+          </div>
+          <div class="arrow">→</div>
+          <div class="node">
+            <strong>Vault Master Key</strong>
+            <span>Random 256-bit key protecting encrypted vault data</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="privacy">
+      <div class="section-head">
+        <div class="kicker">Device protection</div>
+        <h2>Defense in depth.</h2>
+        <p class="muted">PrivateMoment combines app-level encryption with iOS platform protections and minimizes where plaintext can exist.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true">▣</div>
+          <h3>Complete File Protection</h3>
+          <p>Encrypted media, thumbnails and metadata are additionally protected using iOS Complete File Protection.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌂</div>
+          <h3>Private app storage</h3>
+          <p>Vault content lives inside the app's protected Application Support storage rather than a public Documents folder.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">◐</div>
+          <h3>Background privacy</h3>
+          <p>Sensitive content is covered as soon as PrivateMoment leaves the foreground. Auto-lock can require authentication again after the configured threshold.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌫</div>
+          <h3>Temporary plaintext is short-lived</h3>
+          <p>When system operations require temporary decrypted media, it stays in protected temporary storage and is cleaned after use, on lock, and on later startup cleanup.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">◉</div>
+          <h3>Private camera</h3>
+          <p>Photos and videos captured inside PrivateMoment go directly into the private vault instead of first being written to Apple Photos.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">✦</div>
+          <h3>Metadata matters too</h3>
+          <p>A thumbnail, title or private note can be sensitive even without the original photo. PrivateMoment protects those alongside your media.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="backup">
+      <div class="section-head">
+        <div class="kicker">Encrypted backup</div>
+        <h2>Your backup. Your storage. Your PIN.</h2>
+        <p class="muted">
+          PrivateMoment does not run a cloud backup service. You create an encrypted backup and decide where to keep it.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card wide">
+          <h3>Portable without depending on the old device</h3>
+          <p>
+            A PrivateMoment backup contains a portable, PIN-protected key envelope and encrypted vault data.
+            Restoring does not require the original device's Face ID or Keychain state.
+          </p>
+          <div class="list">
+            <div class="item"><span class="check">✓</span><span>Save with Files, iCloud Drive, external storage or another file provider</span></div>
+            <div class="item"><span class="check">✓</span><span>Backup encryption uses its own random salt</span></div>
+            <div class="item"><span class="check">✓</span><span>Restore on another device using the backup file and correct PIN</span></div>
+            <div class="item"><span class="check">✓</span><span>Restore is staged and validated before replacing the current vault</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-head">
+        <div class="kicker">Data collection</div>
+        <h2>Nothing private needs to be measured.</h2>
+      </div>
+      <div class="callout">
+        <h2>No account. No ads. No analytics tracking. No PrivateMoment server storing your vault.</h2>
+        <p class="muted">
+          We do not need to know which photos you open, which Moments you create, how often you unlock the app, or what you keep inside it.
+        </p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="limits">
+      <div class="section-head">
+        <div class="kicker">What this architecture means</div>
+        <h2>Some things are intentionally impossible for us.</h2>
+        <p class="muted">
+          Keeping PrivateMoment out of your vault also means we cannot act as a recovery service for secrets we never receive.
+        </p>
+      </div>
+
+      <div class="list">
+        <div class="item"><span class="check">✓</span><span>We cannot remotely view the contents of your vault.</span></div>
+        <div class="item"><span class="check">✓</span><span>We cannot recover an encrypted backup without its correct PIN.</span></div>
+        <div class="item"><span class="check">✓</span><span>We cannot restore your private content from a PrivateMoment server.</span></div>
+        <div class="item"><span class="check">✓</span><span>We cannot see the photos, videos, Moments or notes you choose to store.</span></div>
+      </div>
+
+      <div class="fine">
+        <strong style="color:#b9b9c0">Security is a process.</strong>
+        No software can truthfully promise that compromise is impossible. PrivateMoment focuses on reducing exposure,
+        using established cryptographic primitives, minimizing plaintext data, and using iOS platform security where appropriate.
+        This page is updated when meaningful security architecture changes are made.
+        <br><br>
+        Last updated: September 26, 2026.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 PrivateMoment. Your private moments stay yours.</div>
+  </footer>
+</body>
+</html>
