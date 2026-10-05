@@ -1,0 +1,29 @@
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d16">
+<title>セキュリティ | Photo Vault</title><meta name="description" content="Photo Vaultが写真・動画を端末上で暗号化し、Face ID・パスコードで保護する仕組みとFirebase Analyticsの利用範囲を説明します。">
+<link rel="canonical" href="https://yuege.online/private-moments/ja/security/"><link rel="stylesheet" href="/private-moments/assets/site.css"><link rel="icon" href="/private-moments/assets/app-icon.svg" type="image/svg+xml">
+</head><body>
+<nav class="nav"><div class="wrap nav-inner"><a class="brand" href="/private-moments/ja/"><img src="/private-moments/assets/app-icon.svg" alt=""><span>Photo Vault</span></a><div class="nav-links"><a href="/private-moments/ja/">ホーム</a><a href="/private-moments/ja/faq/">FAQ</a><a href="/private-moments/ja/privacy/">プライバシー</a><a class="appstore" href="https://apps.apple.com/jp/app/photo-vault-hide-lock-safe/id6812803369">App Storeで見る</a></div></div></nav>
+<main>
+<header class="hero center wrap"><div class="eyebrow">セキュリティ</div><h1>大切な写真を、端末上で守る。</h1><p class="lead">Photo Vaultは、プライベートな写真・動画・MomentをiPhone上で保護することを前提に設計しています。</p><div class="pills" style="justify-content:center"><span class="pill">AES-GCM暗号化</span><span class="pill">Face ID</span><span class="pill">6桁パスコード</span><span class="pill">アカウント不要</span><span class="pill">広告なし</span></div></header>
+<section class="section wrap"><div class="section-head"><div class="kicker">端末上の保護</div><h2>「隠す」だけではなく、暗号化。</h2></div><div class="grid">
+<article class="card half"><h3>Vaultメディアを暗号化</h3><p>写真・動画などのVaultコンテンツは、認証付き暗号AES-GCMを使って端末上で保護します。</p></article>
+<article class="card half"><h3>Face ID + パスコード</h3><p>6桁PINと任意のFace IDでVaultへのアクセスを保護します。</p></article>
+<article class="card half"><h3>iOSのファイル保護</h3><p>暗号化されたメディアや関連データには、iOSの保護機構も組み合わせます。</p></article>
+<article class="card half"><h3>プライベートな保存領域</h3><p>Vaultデータはアプリ専用の保存領域で管理されます。</p></article>
+</div></section>
+<section class="section wrap"><div class="callout"><div class="kicker">サーバー保存について</div><h2>写真・動画そのものを当社サーバーに保管しません。</h2><p class="muted">Photo Vaultに保存した写真・動画そのものを、当社が運営するサーバーへアップロードして保管する仕組みはありません。ユーザーが明示的に共有・書き出し・バックアップを行った場合は、選択した外部サービス側のポリシーが適用されます。</p></div></section>
+<section class="section wrap"><div class="section-head"><div class="kicker">利用状況の分析</div><h2>Firebase Analyticsは、Vaultの中身を見るためのものではありません。</h2></div>
+<div class="card full"><p>アプリ品質の改善と、どの機能が利用されているかを把握するため、Firebase Analyticsを利用します。</p>
+<div class="checklist">
+<div class="item"><span class="check">✓</span><span>Vault内の写真・動画そのものを分析イベントとして送信しません</span></div>
+<div class="item"><span class="check">✓</span><span>写真・動画の内容、Moment本文、PIN、暗号鍵を送信しません</span></div>
+<div class="item"><span class="check">✓</span><span>IDFAを使用しません</span></div>
+<div class="item"><span class="check">✓</span><span>AdSupportを導入しません</span></div>
+<div class="item"><span class="check">✓</span><span>IDFV収集を無効化します</span></div>
+<div class="item"><span class="check">✓</span><span>広告を配信しません</span></div>
+<div class="item"><span class="check">✓</span><span>Google Signals・広告関連機能を有効にしません</span></div>
+</div><p class="muted" style="margin-top:18px">Firebaseが処理する技術情報については、GoogleのFirebaseおよびプライバシーに関する説明もご確認ください。</p></div>
+</section>
+<section class="section wrap"><p class="notice"><strong>絶対的な安全を保証するものではありません。</strong> どのソフトウェアにもリスクはあります。Photo Vaultは、プライベートデータの露出を減らし、確立された暗号技術とiOSの保護機構を組み合わせることを重視しています。最終更新: 2026年10月5日。</p></section>
+</main><footer><div class="wrap footer-row"><span>© 2026 Yuege Apps / Photo Vault</span><span class="footer-links"><a href="/private-moments/ja/privacy/">プライバシー</a><a href="/private-moments/ja/faq/">FAQ</a><a href="/private-moments/ja/support/">サポート</a></span></div></footer></body></html>
