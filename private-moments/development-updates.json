@@ -10,7 +10,7 @@
     {
       "id": "BUG-001",
       "type": "bug",
-      "status": "fixed_pending_release",
+      "status": "fixed",
       "title": {
         "en": "Improve iCloud photo import",
         "zh-CN": "优化 iCloud 照片导入"
@@ -20,22 +20,22 @@
         "zh-CN": "已修复部分 iCloud 照片无法导入的问题。"
       },
       "details": {
-        "en": "Fix completed for version 1.7; update is pending release.",
-        "zh-CN": "问题已修复，修复版本：1.7（待上线）。"
+        "en": "Fixed and released in version 1.7.",
+        "zh-CN": "已在 1.7 版本修复并上线。"
       },
       "updatedAt": "2026-10-17",
       "releaseVersion": "1.7",
       "sortOrder": 10,
-      "releaseStatus": "pending",
+      "releaseStatus": "released",
       "releaseLabel": {
-        "en": "Fix version: 1.7 (Pending release)",
-        "zh-CN": "修复版本：1.7（待上线）"
+        "en": "Fix version: 1.7 (Released)",
+        "zh-CN": "修复版本：1.7（已上线）"
       }
     },
     {
       "id": "BUG-002",
       "type": "bug",
-      "status": "fixed_pending_release",
+      "status": "fixed",
       "title": {
         "en": "Fix Decoy Vault creation",
         "zh-CN": "修复伪装保险箱创建问题"
@@ -45,22 +45,22 @@
         "zh-CN": "已修复伪装保险箱无法创建的问题。"
       },
       "details": {
-        "en": "Fix completed for version 1.7; update is pending release.",
-        "zh-CN": "问题已修复，修复版本：1.7（待上线）。"
+        "en": "Fixed and released in version 1.7.",
+        "zh-CN": "已在 1.7 版本修复并上线。"
       },
       "updatedAt": "2026-10-17",
       "releaseVersion": "1.7",
       "sortOrder": 20,
-      "releaseStatus": "pending",
+      "releaseStatus": "released",
       "releaseLabel": {
-        "en": "Fix version: 1.7 (Pending release)",
-        "zh-CN": "修复版本：1.7（待上线）"
+        "en": "Fix version: 1.7 (Released)",
+        "zh-CN": "修复版本：1.7（已上线）"
       }
     },
     {
       "id": "BUG-003",
       "type": "bug",
-      "status": "fixed_pending_release",
+      "status": "fixed",
       "title": {
         "en": "Hide sensitive previews when switching apps",
         "zh-CN": "切换应用时隐藏敏感预览"
@@ -70,16 +70,16 @@
         "zh-CN": "优化应用切换时的隐私保护，隐藏敏感预览内容。"
       },
       "details": {
-        "en": "Fix completed for version 1.7; update is pending release.",
-        "zh-CN": "问题已修复，修复版本：1.7（待上线）。"
+        "en": "Fixed and released in version 1.7.",
+        "zh-CN": "已在 1.7 版本修复并上线。"
       },
       "updatedAt": "2026-10-17",
       "releaseVersion": "1.7",
       "sortOrder": 30,
-      "releaseStatus": "pending",
+      "releaseStatus": "released",
       "releaseLabel": {
-        "en": "Fix version: 1.7 (Pending release)",
-        "zh-CN": "修复版本：1.7（待上线）"
+        "en": "Fix version: 1.7 (Released)",
+        "zh-CN": "修复版本：1.7（已上线）"
       }
     },
     {
