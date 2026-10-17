@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "app": "hide-photos",
+  "updatedAt": "2026-10-17",
+  "privacyNote": {
+    "en": "Only development updates are shown here. Private feedback and personal information are never published.",
+    "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
+  },
+  "items": [
+    {
+      "id": "BUG-001",
+      "type": "bug",
+      "status": "in_progress",
+      "title": {
+        "en": "Improve iCloud photo import",
+        "zh-CN": "优化 iCloud 照片导入"
+      },
+      "summary": {
+        "en": "Improving how photos stored in iCloud are downloaded and imported.",
+        "zh-CN": "优化 iCloud 原件下载与导入流程，解决部分照片无法导入的问题。"
+      },
+      "details": {
+        "en": "We are working on more reliable imports for iCloud-only photos.",
+        "zh-CN": "正在改进仅存储在 iCloud 的照片的下载与导入可靠性。"
+      },
+      "updatedAt": "2026-10-17",
+      "releaseVersion": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "BUG-002",
+      "type": "bug",
+      "status": "in_progress",
+      "title": {
+        "en": "Fix Decoy Vault creation",
+        "zh-CN": "修复伪装保险箱创建问题"
+      },
+      "summary": {
+        "en": "A fix is being prepared for issues creating a Decoy Vault.",
+        "zh-CN": "已针对部分用户无法创建伪装保险箱的问题准备修复，等待版本发布验证。"
+      },
+      "details": {
+        "en": "The fix will be marked as released after the updated version is available.",
+        "zh-CN": "新版本正式上架并确认后，再将状态更新为「已修复」。"
+      },
+      "updatedAt": "2026-10-17",
+      "releaseVersion": null,
+      "sortOrder": 20
+    },
+    {
+      "id": "FEATURE-001",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Multiple album management",
+        "zh-CN": "多相册管理"
+      },
+      "summary": {
+        "en": "More flexible ways to create and organize private albums.",
+        "zh-CN": "更灵活地创建与整理多个私密相册。"
+      },
+      "details": {
+        "en": "Improve album organization and management. Availability and scope may change.",
+        "zh-CN": "完善相册创建与分类管理，具体范围和发布时间以实际更新为准。"
+      },
+      "updatedAt": "2026-10-17",
+      "releaseVersion": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "FEATURE-002",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Hide content in the App Switcher",
+        "zh-CN": "隐藏应用切换器预览内容"
+      },
+      "summary": {
+        "en": "Protect private content when switching between apps.",
+        "zh-CN": "切换应用时隐藏敏感预览，进一步保护隐私。"
+      },
+      "details": {
+        "en": "Add a privacy screen so private content is not shown in app previews.",
+        "zh-CN": "计划加入隐私遮挡画面，避免后台应用预览中显示私密内容。"
+      },
+      "updatedAt": "2026-10-17",
+      "releaseVersion": null,
+      "sortOrder": 20
+    }
+  ],
+  "statusDefinitions": {
+    "bug": [
+      "received",
+      "in_progress",
+      "fixed",
+      "cannot_reproduce"
+    ],
+    "feature": [
+      "under_review",
+      "planned",
+      "in_progress",
+      "released"
+    ]
+  }
+}
