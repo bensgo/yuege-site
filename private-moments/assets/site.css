@@ -68,3 +68,7 @@ p{margin:0 0 1em}
 footer{padding:28px 0 50px;color:#8d98aa;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.card{grid-column:span 6}}
 @media(max-width:700px){.wrap{width:min(calc(100% - 28px),var(--max))}.nav-links a:not(.appstore){display:none}.hero{padding-top:68px}.card,.card.half,.card.full{grid-column:span 12}.checklist{grid-template-columns:1fr}.appstore{min-height:42px;padding:0 13px}}
+
+/* Keep the full app name legible on tablets and small phones. */
+@media(max-width:1020px){.nav-links a:not(.appstore){display:none}}
+@media(max-width:480px){.nav-inner{height:auto;min-height:68px;flex-wrap:wrap;padding:10px 0;gap:10px}.nav-links{margin-left:auto}.brand{min-width:0}}

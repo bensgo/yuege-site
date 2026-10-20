@@ -1,4 +1,4 @@
-# Hide Photos — EN-US App Store metadata audit and proposed copy
+# Hide Photos: Secret Album — EN-US App Store metadata audit and proposed copy
 
 Date: 2026-10-20
 App ID: 6812803369
@@ -24,7 +24,7 @@ Keep your private photos in an encrypted vault on your iPhone. Unlock with PIN o
 
 **Description** (max 4,000; typically submitted with an editable app version):
 
-Hide Photos is a private photo and video vault for iPhone, built for people who want a separate, encrypted space for personal memories.
+Hide Photos: Secret Album is a private photo and video vault for iPhone, built for people who want a separate, encrypted space for personal memories.
 
 Your vault photos and videos are encrypted on your device using AES-GCM. There's no account to create, no ads, and no developer-hosted cloud that stores your vault media.
 
@@ -46,7 +46,7 @@ MORE PRIVACY OPTIONS
 IMPORTANT TO KNOW
 Importing photos does not automatically delete originals from Apple Photos or iCloud Photos. Review and delete existing copies separately if that's what you want.
 
-Hide Photos is free to download, with optional Pro in-app purchases. Features and offers may vary by region and app version.
+Hide Photos: Secret Album is free to download, with optional Pro in-app purchases. Features and offers may vary by region and app version.
 
 Privacy Policy: https://yuege.online/private-moments/privacy/
 Security: https://yuege.online/private-moments/security/
@@ -67,7 +67,7 @@ Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 - App name: 25 / 30 characters
 - Subtitle: 27 / 30 characters
 - Promotional Text: 156 / 170 characters
-- Description: 1569 / 4,000 characters
+- Description: 1597 / 4,000 characters
 
 ## References
 
