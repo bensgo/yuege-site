@@ -1,12 +1,37 @@
 {
   "schemaVersion": 1,
   "app": "hide-photos",
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-20",
   "privacyNote": {
     "en": "Only development updates are shown here. Private feedback and personal information are never published.",
     "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
   },
   "items": [
+    {
+      "id": "BUG-004",
+      "type": "bug",
+      "status": "in_progress",
+      "title": {
+        "en": "Clarification on the Lifetime Pro promotion and pricing",
+        "zh-CN": "关于终身 Pro 免费活动及价格调整的说明"
+      },
+      "summary": {
+        "en": "The free Lifetime Pro giveaway has ended, but outdated App Store screenshots may still show the promotion. We sincerely apologize for the confusion.",
+        "zh-CN": "之前的终身 Pro 免费赠送活动已结束，但 App Store 宣传截图未能及时更新，可能造成误会，对此深表歉意。"
+      },
+      "details": {
+        "en": "Thank you to everyone who supported the free Lifetime Pro giveaway. The promotion has ended, but App Store screenshots cannot be updated immediately, and some people may still see the old offer. I am truly sorry for the confusion. During the version 1.8 review period, I have decided to temporarily set the Lifetime Pro price to US$2.99. After that, the regular price will return to US$12.99. I am an independent developer, still learning how to manage and promote an app. I did not handle this carefully enough, and I sincerely apologize for the misunderstanding. Thank you for your patience and support. I will keep improving Hide Photos.",
+        "zh-CN": "之前举办的终身 Pro 免费赠送活动已经结束，非常感谢大家的支持！由于 App Store 的宣传截图无法立即更新，部分用户仍然看到了免费活动的信息，因此产生了误会。对此，我真的非常抱歉。为了弥补这次沟通上的不足，我决定在 1.8 版本审核期间，暂时将终身 Pro 价格调整为 US$2.99；之后会恢复正式价格 US$12.99。我只是一名普通的独立开发者，在应用运营方面还有很多需要学习和改进的地方。这次是我考虑不够周全，给大家带来了困扰。真的很抱歉，也感谢大家的理解和支持。我会继续认真改进 Hide Photos。"
+      },
+      "updatedAt": "2026-10-20",
+      "releaseVersion": "1.8",
+      "sortOrder": 5,
+      "releaseStatus": "in_review",
+      "releaseLabel": {
+        "en": "Version: 1.8 (In Review)",
+        "zh-CN": "版本：1.8（审核中）"
+      }
+    },
     {
       "id": "BUG-001",
       "type": "bug",
