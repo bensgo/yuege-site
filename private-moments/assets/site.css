@@ -72,3 +72,22 @@ footer{padding:28px 0 50px;color:#8d98aa;font-size:13px}.footer-row{display:flex
 /* Keep the full app name legible on tablets and small phones. */
 @media(max-width:1020px){.nav-links a:not(.appstore){display:none}}
 @media(max-width:480px){.nav-inner{height:auto;min-height:68px;flex-wrap:wrap;padding:10px 0;gap:10px}.nav-links{margin-left:auto}.brand{min-width:0}}
+
+
+/* GSO guide screenshots and comparison tables; shared across English feature guides. */
+.gso-add{margin:28px 0 34px}
+.gso-add .gso-unit{margin:34px 0}
+.gso-add .gso-unit>h2{font-size:clamp(25px,3.1vw,35px);line-height:1.2;margin-bottom:15px}
+.gso-add .gso-unit>p,.gso-add .gso-unit li{line-height:1.7}
+.gso-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:18px;margin:20px 0 25px}
+.gso-shot{margin:0;padding:13px;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:20px;min-width:0}
+.gso-shot img{display:block;width:100%;height:auto;max-width:285px;margin:auto;border-radius:15px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
+.gso-shot figcaption{font-size:13px;color:var(--muted);line-height:1.5;margin:12px 2px 3px}
+.gso-shot a{display:block}
+.gso-compare{overflow-x:auto;margin:18px 0 20px}
+.gso-compare table{border-collapse:collapse;width:100%;min-width:560px}
+.gso-compare th,.gso-compare td{padding:13px;text-align:left;vertical-align:top;border:1px solid var(--line);font-size:14px;min-width:125px}
+.gso-compare th{background:rgba(90,141,255,.13)}
+.gso-next{margin:28px 0 2px;padding:15px 0;border-top:1px solid var(--line);font-size:14px}
+.gso-next a{color:#acc8ff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:550px){.gso-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gso-shot{padding:7px}.gso-shot figcaption{font-size:11px}.gso-compare th,.gso-compare td{font-size:12px;padding:9px}}
