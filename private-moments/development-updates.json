@@ -1,12 +1,32 @@
 {
   "schemaVersion": 1,
   "app": "hide-photos",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-22",
   "privacyNote": {
     "en": "Only development updates are shown here. Private feedback and personal information are never published.",
     "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
   },
   "items": [
+    {
+      "id": "BUG-005",
+      "type": "bug",
+      "status": "fixed",
+      "title": {
+        "en": "Limited-time promotion has ended",
+        "zh-CN": "短期促销活动已结束"
+      },
+      "summary": {
+        "en": "The limited-time Lifetime Pro promotion has ended. The price will return to its regular US$12.99. Thank you so much for your support and encouragement! As an independent developer, I truly appreciate everyone who has tried and supported Hide Photos: Secret Album. App Store pricing may take some time to update across regions. Please refer to the price shown on Apple's purchase confirmation screen.",
+        "zh-CN": "终身 Pro 的短期优惠活动已经结束，价格将恢复至正常售价 US$12.99。非常感谢大家一直以来的支持与鼓励！作为一名独立开发者，每一位用户的信任和支持对我都非常重要。我会继续用心改进 Hide Photos: Secret Album。App Store 各地区价格更新可能存在延迟，请以 Apple 购买确认页面显示的实际价格为准。"
+      },
+      "details": {
+        "en": "The limited-time Lifetime Pro promotion has ended. The price will return to its regular US$12.99. Thank you so much for your support and encouragement! As an independent developer, I truly appreciate everyone who has tried and supported Hide Photos: Secret Album. App Store pricing may take some time to update across regions. Please refer to the price shown on Apple's purchase confirmation screen.",
+        "zh-CN": "终身 Pro 的短期优惠活动已经结束，价格将恢复至正常售价 US$12.99。非常感谢大家一直以来的支持与鼓励！作为一名独立开发者，每一位用户的信任和支持对我都非常重要。我会继续用心改进 Hide Photos: Secret Album。App Store 各地区价格更新可能存在延迟，请以 Apple 购买确认页面显示的实际价格为准。"
+      },
+      "updatedAt": "2026-10-22",
+      "releaseVersion": null,
+      "sortOrder": 1
+    },
     {
       "id": "BUG-004",
       "type": "bug",
