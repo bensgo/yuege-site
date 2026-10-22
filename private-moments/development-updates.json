@@ -83,49 +83,28 @@
       }
     },
     {
-      "id": "FEATURE-003",
+      "id": "FEATURE-006",
       "type": "feature",
-      "status": "proposed",
+      "status": "in_progress",
       "title": {
-        "en": "Import files via USB and Wi-Fi",
-        "zh-CN": "支持通过 USB 和 Wi-Fi 添加文件"
+        "en": "Flexible PIN length for Decoy Vaults",
+        "zh-CN": "伪装保险箱支持自定义 PIN 位数"
       },
       "summary": {
-        "en": "Proposal: enable adding files via USB or Wi-Fi. Delivery date to be determined.",
-        "zh-CN": "希望通过 USB 或 Wi-Fi 向应用添加文件，已收到提案，完成时间待定。"
+        "en": "Based on user feedback requesting a 4-digit Decoy Vault PIN instead of a mandatory 6-digit PIN, version 1.9 is being developed to remove the fixed 6-digit requirement and allow PINs of different lengths, including 4 digits, without a fixed length limit.",
+        "zh-CN": "收到用户反馈，希望伪装保险箱可以设置 4 位 PIN，而不是强制 6 位。1.9 版本正在开发中，将取消固定 6 位 PIN 的要求，支持包括 4 位在内的自定义 PIN 位数，不再限制固定长度。"
       },
       "details": {
-        "en": "The feature has been proposed; implementation scope and schedule are not yet determined.",
-        "zh-CN": "该功能目前处于提案阶段，具体实现方式与完成时间尚未确定。"
-      },
-      "updatedAt": "2026-10-17",
-      "releaseVersion": null,
-      "sortOrder": 10,
-      "estimatedRelease": null
-    },
-    {
-      "id": "FEATURE-004",
-      "type": "feature",
-      "status": "planned",
-      "title": {
-        "en": "Show all photos in Recent Photos",
-        "zh-CN": "首页最近照片不限制显示数量"
-      },
-      "summary": {
-        "en": "Planned for version 1.9: remove the display-count limit in Recent Photos on the home screen, so users can browse all their photos.",
-        "zh-CN": "计划在 1.9 版本中取消首页「最近照片」的显示数量限制，让用户可以浏览全部照片。"
-      },
-      "details": {
-        "en": "The Recent Photos section on the home screen will no longer limit how many photos are displayed.",
-        "zh-CN": "首页「最近照片」将不再限制照片显示数量。"
+        "en": "In development for version 1.9.",
+        "zh-CN": "预计在 1.9 版本实现，目前开发中。"
       },
       "updatedAt": "2026-10-22",
       "releaseVersion": "1.9",
-      "sortOrder": 20,
-      "releaseStatus": "planned",
+      "sortOrder": 10,
+      "releaseStatus": "in_development",
       "releaseLabel": {
-        "en": "Version: 1.9 (Planned)",
-        "zh-CN": "版本：1.9（计划中）"
+        "en": "Target version: 1.9 (In Development)",
+        "zh-CN": "目标版本：1.9（开发中）"
       }
     },
     {
@@ -146,6 +125,31 @@
       },
       "updatedAt": "2026-10-22",
       "releaseVersion": "1.9",
+      "sortOrder": 20,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Version: 1.9 (Planned)",
+        "zh-CN": "版本：1.9（计划中）"
+      }
+    },
+    {
+      "id": "FEATURE-004",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Show all photos in Recent Photos",
+        "zh-CN": "首页最近照片不限制显示数量"
+      },
+      "summary": {
+        "en": "Planned for version 1.9: remove the display-count limit in Recent Photos on the home screen, so users can browse all their photos.",
+        "zh-CN": "计划在 1.9 版本中取消首页「最近照片」的显示数量限制，让用户可以浏览全部照片。"
+      },
+      "details": {
+        "en": "The Recent Photos section on the home screen will no longer limit how many photos are displayed.",
+        "zh-CN": "首页「最近照片」将不再限制照片显示数量。"
+      },
+      "updatedAt": "2026-10-22",
+      "releaseVersion": "1.9",
       "sortOrder": 30,
       "releaseStatus": "planned",
       "releaseLabel": {
@@ -154,29 +158,25 @@
       }
     },
     {
-      "id": "FEATURE-006",
+      "id": "FEATURE-003",
       "type": "feature",
-      "status": "in_progress",
+      "status": "proposed",
       "title": {
-        "en": "Flexible PIN length for Decoy Vaults",
-        "zh-CN": "伪装保险箱支持自定义 PIN 位数"
+        "en": "Import files via USB and Wi-Fi",
+        "zh-CN": "支持通过 USB 和 Wi-Fi 添加文件"
       },
       "summary": {
-        "en": "Based on user feedback requesting a 4-digit Decoy Vault PIN instead of a mandatory 6-digit PIN, version 1.9 is being developed to remove the fixed 6-digit requirement and allow PINs of different lengths, including 4 digits, without a fixed length limit.",
-        "zh-CN": "收到用户反馈，希望伪装保险箱可以设置 4 位 PIN，而不是强制 6 位。1.9 版本正在开发中，将取消固定 6 位 PIN 的要求，支持包括 4 位在内的自定义 PIN 位数，不再限制固定长度。"
+        "en": "Proposal: enable adding files via USB or Wi-Fi. Delivery date to be determined.",
+        "zh-CN": "希望通过 USB 或 Wi-Fi 向应用添加文件，已收到提案，完成时间待定。"
       },
       "details": {
-        "en": "In development for version 1.9.",
-        "zh-CN": "预计在 1.9 版本实现，目前开发中。"
+        "en": "The feature has been proposed; implementation scope and schedule are not yet determined.",
+        "zh-CN": "该功能目前处于提案阶段，具体实现方式与完成时间尚未确定。"
       },
-      "updatedAt": "2026-10-22",
-      "releaseVersion": "1.9",
+      "updatedAt": "2026-10-17",
+      "releaseVersion": null,
       "sortOrder": 40,
-      "releaseStatus": "in_development",
-      "releaseLabel": {
-        "en": "Target version: 1.9 (In Development)",
-        "zh-CN": "目标版本：1.9（开发中）"
-      }
+      "estimatedRelease": null
     }
   ],
   "statusDefinitions": {
