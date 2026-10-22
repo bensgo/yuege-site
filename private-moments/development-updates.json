@@ -102,6 +102,56 @@
       "releaseVersion": null,
       "sortOrder": 10,
       "estimatedRelease": null
+    },
+    {
+      "id": "FEATURE-004",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Show all photos in Recent Photos",
+        "zh-CN": "首页最近照片不限制显示数量"
+      },
+      "summary": {
+        "en": "Planned for version 1.9: remove the display-count limit in Recent Photos on the home screen, so users can browse all their photos.",
+        "zh-CN": "计划在 1.9 版本中取消首页「最近照片」的显示数量限制，让用户可以浏览全部照片。"
+      },
+      "details": {
+        "en": "The Recent Photos section on the home screen will no longer limit how many photos are displayed.",
+        "zh-CN": "首页「最近照片」将不再限制照片显示数量。"
+      },
+      "updatedAt": "2026-10-22",
+      "releaseVersion": "1.9",
+      "sortOrder": 20,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Version: 1.9 (Planned)",
+        "zh-CN": "版本：1.9（计划中）"
+      }
+    },
+    {
+      "id": "FEATURE-005",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Follow system appearance",
+        "zh-CN": "增加跟随系统外观开关"
+      },
+      "summary": {
+        "en": "Planned for version 1.9: add a setting to automatically follow the phone’s system appearance.",
+        "zh-CN": "计划在 1.9 版本中增加「跟随手机系统外观」开关，让应用样式随系统外观设置自动切换。"
+      },
+      "details": {
+        "en": "Add an option in Settings to follow the device’s system appearance automatically.",
+        "zh-CN": "在设置中增加跟随手机系统外观的选项，可根据系统外观自动切换应用样式。"
+      },
+      "updatedAt": "2026-10-22",
+      "releaseVersion": "1.9",
+      "sortOrder": 30,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Version: 1.9 (Planned)",
+        "zh-CN": "版本：1.9（计划中）"
+      }
     }
   ],
   "statusDefinitions": {
