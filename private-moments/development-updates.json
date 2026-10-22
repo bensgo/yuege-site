@@ -30,7 +30,7 @@
     {
       "id": "BUG-004",
       "type": "bug",
-      "status": "in_progress",
+      "status": "fixed",
       "title": {
         "en": "Clarification on the Lifetime Pro promotion and pricing",
         "zh-CN": "关于终身 Pro 免费活动及价格调整的说明"
