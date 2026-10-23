@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "app": "hide-photos",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "privacyNote": {
     "en": "Only development updates are shown here. Private feedback and personal information are never published.",
     "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
@@ -80,6 +80,56 @@
       "releaseLabel": {
         "en": "Fix version: 1.7 (Released)",
         "zh-CN": "修复版本：1.7（已上线）"
+      }
+    },
+    {
+      "id": "FEATURE-008",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "AMOLED true black mode",
+        "zh-CN": "AMOLED 纯黑模式"
+      },
+      "summary": {
+        "en": "Based on user feedback, we plan to add an optional AMOLED true black theme with a pure black background for a more comfortable dark-mode experience.",
+        "zh-CN": "根据用户反馈，计划增加可选的 AMOLED 纯黑主题，采用真正的纯黑背景，提供更舒适的深色界面体验。"
+      },
+      "details": {
+        "en": "Planned enhancement. The release version and timing have not been decided.",
+        "zh-CN": "已列入优化计划，具体版本和上线时间尚未确定。"
+      },
+      "updatedAt": "2026-10-23",
+      "releaseVersion": null,
+      "sortOrder": 1,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Release version: TBD (Planned)",
+        "zh-CN": "目标版本：待定（计划中）"
+      }
+    },
+    {
+      "id": "FEATURE-007",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "More rounded typography",
+        "zh-CN": "更圆润的字体样式"
+      },
+      "summary": {
+        "en": "Based on user feedback requesting a rounded, bold typeface, we plan to explore an optional, more rounded font style while keeping the interface readable and consistent across languages.",
+        "zh-CN": "根据用户对圆润粗体字体的建议，计划研究可选的圆润字体样式，同时兼顾多语言适配、可读性和整体界面一致性。"
+      },
+      "details": {
+        "en": "Font selection and visual design are under consideration. The release version and timing have not been decided.",
+        "zh-CN": "具体字体和视觉方案仍在评估中，版本与上线时间尚未确定。"
+      },
+      "updatedAt": "2026-10-23",
+      "releaseVersion": null,
+      "sortOrder": 2,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Release version: TBD (Planned)",
+        "zh-CN": "目标版本：待定（计划中）"
       }
     },
     {
