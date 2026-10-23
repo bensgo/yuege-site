@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.7",
-  "minimum_version": "1.2",
+  "latest_version": "1.8",
+  "minimum_version": "1.6",
   "force_update": false,
   "title": {
     "en": "New Version Available",
