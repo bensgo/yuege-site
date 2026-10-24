@@ -98,7 +98,7 @@
 <url><loc>https://yuege.online/private-moments/ja/guide/locked-album/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://yuege.online/private-moments/ja/guide/hidden-album-safety/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://yuege.online/private-moments/ja/guide/vault-backup-transfer/</loc><lastmod>2026-10-19</lastmod></url>
-<url><loc>https://yuege.online/lumokeep/</loc><lastmod>2026-10-05</lastmod></url>
+<url><loc>https://yuege.online/lumokeep/</loc><lastmod>2026-10-24</lastmod></url>
 <url><loc>https://yuege.online/lumokeep/privacy/</loc><lastmod>2026-10-05</lastmod></url>
 <url><loc>https://yuege.online/lumokeep/support/</loc><lastmod>2026-10-05</lastmod></url>
 <url><loc>https://yuege.online/private-moments/guide/how-to-hide-photos-on-iphone/</loc><lastmod>2026-10-23</lastmod>
@@ -150,7 +150,7 @@
 <xhtml:link rel="alternate" hreflang="es-ES" href="https://yuege.online/private-moments/es/experience/"/>
 <xhtml:link rel="alternate" hreflang="x-default" href="https://yuege.online/private-moments/experience/"/></url>
 <url><loc>https://yuege.online/lumokeep/guide/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://yuege.online/lumokeep/ja/</loc><lastmod>2026-10-08</lastmod></url>
+<url><loc>https://yuege.online/lumokeep/ja/</loc><lastmod>2026-10-24</lastmod></url>
 <url><loc>https://yuege.online/lumokeep/ja/guide/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://yuege.online/lumokeep/ja/guide/iphone-photo-organize/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://yuege.online/lumokeep/ja/guide/similar-photos-delete/</loc><lastmod>2026-10-08</lastmod></url>
@@ -176,7 +176,7 @@
 <xhtml:link rel="alternate" hreflang="ko-KR" href="https://yuege.online/private-moments/ko/guide/"/>
 <xhtml:link rel="alternate" hreflang="es-ES" href="https://yuege.online/private-moments/es/guide/"/>
 <xhtml:link rel="alternate" hreflang="x-default" href="https://yuege.online/private-moments/guide/"/></url>
-<url><loc>https://yuege.online/lumokeep/zh-CN/</loc><lastmod>2026-10-08</lastmod></url>
+<url><loc>https://yuege.online/lumokeep/zh-CN/</loc><lastmod>2026-10-24</lastmod></url>
 <url><loc>https://yuege.online/lumokeep/zh-CN/guide/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://yuege.online/private-moments/zh-CN/guide/hide-photos-on-iphone/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://yuege.online/private-moments/zh-CN/guide/lock-iphone-photos/</loc><lastmod>2026-10-20</lastmod></url>
@@ -914,4 +914,7 @@
 <xhtml:link rel="alternate" hreflang="ko-KR" href="https://yuege.online/private-moments/ko/guide/lifetime-photo-vault-iphone/"/>
 <xhtml:link rel="alternate" hreflang="es-ES" href="https://yuege.online/private-moments/es/guide/lifetime-photo-vault-iphone/"/>
 <xhtml:link rel="alternate" hreflang="x-default" href="https://yuege.online/private-moments/guide/lifetime-photo-vault-iphone/"/></url>
+<url><loc>https://yuege.online/lumokeep/faq/</loc><lastmod>2026-10-24</lastmod></url>
+<url><loc>https://yuege.online/lumokeep/ja/faq/</loc><lastmod>2026-10-24</lastmod></url>
+<url><loc>https://yuege.online/lumokeep/zh-CN/faq/</loc><lastmod>2026-10-24</lastmod></url>
 </urlset>
