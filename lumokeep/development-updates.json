@@ -1,1 +1,36 @@
-
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "lumokeep-language-switcher",
+      "type": "feature",
+      "status": "in_progress",
+      "title": {
+        "en": "Language switching entry",
+        "zh-Hans": "增加语言切换入口",
+        "zh-Hant": "新增語言切換入口",
+        "ja": "言語切り替えメニューの追加"
+      },
+      "summary": {
+        "en": "A language switching entry is in development for version 1.5.",
+        "zh-Hans": "正在开发语言切换入口，目标版本为 1.5。",
+        "zh-Hant": "正在開發語言切換入口，目標版本為 1.5。",
+        "ja": "バージョン1.5に向けて、言語切り替えメニューを開発中です。"
+      },
+      "details": {
+        "en": "Add an entry in the app to switch the display language. This feature is in development for version 1.5.",
+        "zh-Hans": "在 App 内增加切换显示语言的入口。该功能正在开发中，目标版本为 1.5。",
+        "zh-Hant": "在 App 內新增切換顯示語言的入口。此功能正在開發中，目標版本為 1.5。",
+        "ja": "アプリ内に表示言語を切り替えるメニューを追加します。バージョン1.5に向けて開発中です。"
+      },
+      "updatedAt": "2026-10-24",
+      "releaseVersion": "1.5",
+      "releaseLabel": {
+        "en": "Target version: 1.5",
+        "zh-Hans": "目标版本：1.5",
+        "zh-Hant": "目標版本：1.5",
+        "ja": "対象バージョン：1.5"
+      }
+    }
+  ]
+}
