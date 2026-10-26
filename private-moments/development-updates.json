@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "app": "hide-photos",
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-26",
   "privacyNote": {
     "en": "Only development updates are shown here. Private feedback and personal information are never published.",
     "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
@@ -83,6 +83,56 @@
       }
     },
     {
+      "id": "FEATURE-010",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Grid and list views for folders and albums",
+        "zh-CN": "文件夹与相册支持网格和列表视图"
+      },
+      "summary": {
+        "en": "Plan to add a grid/list view switch when browsing folders and albums, with the selected layout remembered for future visits.",
+        "zh-CN": "计划在浏览文件夹与相册时增加网格／列表视图切换，并记住上次选择的布局，方便按封面查找或按名称管理。"
+      },
+      "details": {
+        "en": "Planned. The target version and release date are not yet determined.",
+        "zh-CN": "已列入计划，目标版本与上线时间待定。"
+      },
+      "updatedAt": "2026-10-26",
+      "releaseVersion": null,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Planned",
+        "zh-CN": "计划中"
+      },
+      "sortOrder": 10
+    },
+    {
+      "id": "FEATURE-009",
+      "type": "feature",
+      "status": "planned",
+      "title": {
+        "en": "Option to hide the Recent Photos tab",
+        "zh-CN": "支持隐藏最近照片标签页"
+      },
+      "summary": {
+        "en": "Plan to add a Show Recent Photos setting, enabled by default. Turning it off will hide the entire tab and open Albums instead, without deleting any photos.",
+        "zh-CN": "计划增加「显示最近照片」开关，默认开启；关闭后隐藏整个最近照片标签页并切换到相册，不会删除任何照片。"
+      },
+      "details": {
+        "en": "Planned. The target version and release date are not yet determined.",
+        "zh-CN": "已列入计划，目标版本与上线时间待定。"
+      },
+      "updatedAt": "2026-10-26",
+      "releaseVersion": null,
+      "releaseStatus": "planned",
+      "releaseLabel": {
+        "en": "Planned",
+        "zh-CN": "计划中"
+      },
+      "sortOrder": 20
+    },
+    {
       "id": "FEATURE-008",
       "type": "feature",
       "status": "released",
@@ -100,7 +150,7 @@
       },
       "updatedAt": "2026-10-25",
       "releaseVersion": null,
-      "sortOrder": 1,
+      "sortOrder": 30,
       "releaseStatus": "released",
       "releaseLabel": {
         "en": "Released",
@@ -125,7 +175,7 @@
       },
       "updatedAt": "2026-10-25",
       "releaseVersion": null,
-      "sortOrder": 2,
+      "sortOrder": 40,
       "releaseStatus": "released",
       "releaseLabel": {
         "en": "Released",
@@ -150,7 +200,7 @@
       },
       "updatedAt": "2026-10-22",
       "releaseVersion": "1.9",
-      "sortOrder": 10,
+      "sortOrder": 50,
       "releaseStatus": "in_development",
       "releaseLabel": {
         "en": "Target version: 1.9 (In Development)",
@@ -175,7 +225,7 @@
       },
       "updatedAt": "2026-10-25",
       "releaseVersion": "1.9",
-      "sortOrder": 20,
+      "sortOrder": 60,
       "releaseStatus": "released",
       "releaseLabel": {
         "en": "Version: 1.9 (Released)",
@@ -200,7 +250,7 @@
       },
       "updatedAt": "2026-10-25",
       "releaseVersion": "1.9",
-      "sortOrder": 30,
+      "sortOrder": 70,
       "releaseStatus": "released",
       "releaseLabel": {
         "en": "Version: 1.9 (Released)",
@@ -225,7 +275,7 @@
       },
       "updatedAt": "2026-10-17",
       "releaseVersion": null,
-      "sortOrder": 40,
+      "sortOrder": 80,
       "estimatedRelease": null
     }
   ],
