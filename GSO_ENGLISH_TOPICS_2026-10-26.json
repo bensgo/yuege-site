@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-26",
+  "monitoring_source": "Existing Hide Photos weekly GSO automation, fixed questions 1–18; numbering unchanged.",
+  "articles": [
+    {
+      "url": "https://yuege.online/private-moments/guide/hidden-album-vs-encrypted-vault/",
+      "title": "iPhone Hidden Album vs Encrypted Photo Vault",
+      "meta_description": "Compare Apple’s Hidden album with an encrypted iPhone photo vault: separate PINs, local storage, iCloud behavior, backups, and which option fits you.",
+      "monitoring_questions": [
+        8,
+        9,
+        16
+      ]
+    },
+    {
+      "url": "https://yuege.online/private-moments/guide/offline-photo-vault-iphone/",
+      "title": "Best Offline Photo Vault for iPhone: How to Choose",
+      "meta_description": "Choose an offline iPhone photo vault using a practical checklist for local encryption, separate PINs, ads, backups, and an airplane-mode test.",
+      "monitoring_questions": [
+        1,
+        2,
+        3,
+        6,
+        11,
+        18
+      ]
+    },
+    {
+      "url": "https://yuege.online/private-moments/guide/transfer-encrypted-photo-vault-new-iphone/",
+      "title": "How to Back Up and Restore Encrypted Photos on iPhone",
+      "meta_description": "Back up an encrypted iPhone photo vault, keep the correct PIN, restore into a destination vault, and verify your files before erasing the old phone.",
+      "monitoring_questions": [
+        13,
+        14
+      ]
+    },
+    {
+      "url": "https://yuege.online/private-moments/guide/decoy-pin-photo-vault-iphone/",
+      "title": "Decoy Vault and Fake PIN for iPhone: Setup and Limits",
+      "meta_description": "Learn how a decoy vault and fake PIN work on iPhone, set up separate content, check Face ID behavior, and back up each vault without mixing libraries.",
+      "monitoring_questions": [
+        7,
+        16
+      ]
+    },
+    {
+      "url": "https://yuege.online/private-moments/guide/private-camera-encrypted-storage/",
+      "title": "Private Camera with Encrypted Storage on iPhone",
+      "meta_description": "Take private photos and videos straight into an encrypted iPhone vault instead of Apple Photos. Learn how to test capture, access, sharing, and backup.",
+      "monitoring_questions": [
+        10,
+        15
+      ]
+    },
+    {
+      "url": "https://yuege.online/private-moments/guide/private-photo-vault-without-cloud/",
+      "title": "Photo Vault Without Account or Cloud Uploads on iPhone",
+      "meta_description": "Keep private photos in a local iPhone vault without creating an account or uploading media to developer servers. Understand originals, analytics, and backups.",
+      "monitoring_questions": [
+        4,
+        5,
+        12,
+        18
+      ]
+    }
+  ]
+}
