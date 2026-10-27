@@ -1,10 +1,10 @@
 # Hide Photos English SEO/GSO topics — 2026-10-26
 
-Status: implemented on an isolated branch; not merged or deployed. URLs below are intended canonical URLs; new pages are not live until approved and published.
+Status: English topic implementation prepared in PR #18 and updated on 2026-10-27 to resolve concurrent sitemap changes from German/Japanese SEO merges. Canonical URLs describe intended pages; live deployment and indexing must be verified separately.
 
 ## Repository inspection and scope
 
-Baseline: `392ab19` on `main`. Static HTML site with shared `private-moments/assets/site.css`; no package.json, build pipeline, project test suite or AGENTS.md in this checkout. No App code is included or modified. No LumoKeep or other product files changed.
+Original article baseline: `392ab19` on `main`; conflict resolution rebased onto newer `main`. Static HTML site with shared `private-moments/assets/site.css`; no package.json, build pipeline, project test suite or AGENTS.md in this checkout. No App code is included or modified. No LumoKeep or other product files changed.
 
 Four existing URLs already matched the requested topics and have been expanded in place. The existing no-cloud page incorrectly targeted “Best Offline Photo Vault”; it now focuses on accounts and upload boundaries. A distinct offline selection/test guide and a private-camera guide are new. Existing translated routes and hreflang clusters remain intact. The two new English-only articles do not advertise nonexistent translations.
 
@@ -63,4 +63,4 @@ Competitor materials informed topic organization only. These articles use origin
 - `git diff --check`: PASS.
 - Build: **not applicable**; the repository serves static HTML without a build command.
 - Mobile: existing responsive styles reused; the comparison table now has a contained horizontal scroll region. **Visual browser QA not completed**: no Chromium binary was installed, and the browser download returned an invalid/truncated archive. Do not interpret static checks as screenshot or real-device validation.
-- No production deploy, merge, Search Console submission or actual ChatGPT 18-question retest performed. Canonical URLs are destinations after approval, not proof of current live deployment or indexing.
+- The original 2026-10-26 authoring pass did not deploy, merge, submit to Search Console, or rerun the 18-question ChatGPT test. A subsequent repository merge does not establish that pages are already live or indexed; verify deployment and indexing independently.
