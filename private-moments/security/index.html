@@ -28,8 +28,8 @@
 <header class="hero center wrap">
   <div class="eyebrow">Security by design</div>
   <h1>Your private moments stay yours.</h1>
-  <p class="lead">Hide Photos: Secret Album protects photos, videos, notes and metadata locally on your iPhone. No account. No Hide Photos: Secret Album cloud storing your vault. No ads. Limited product analytics.</p>
-  <div class="pills" style="justify-content:center"><span class="pill">Local encryption</span><span class="pill">No account</span><span class="pill">No server storage</span><span class="pill">No ad tracking</span><span class="pill">User-controlled backup</span></div>
+  <p class="lead">Hide Photos: Secret Album encrypts private vault content on your device by default. Optional Pro encrypted iCloud Sync lets you synchronize encrypted content through your own iCloud account. No developer-operated vault storage, no Hide Photos account and no ads. Limited product analytics.</p>
+  <div class="pills" style="justify-content:center"><span class="pill">Local encryption</span><span class="pill">No account</span><span class="pill">No developer-operated vault storage</span><span class="pill">Optional encrypted iCloud Sync (Pro)</span><span class="pill">No ad tracking</span><span class="pill">User-controlled backup</span></div>
 </header>
 
 <section class="section wrap" id="encryption">
@@ -37,11 +37,11 @@
   <div class="grid">
     <article class="card half"><div class="icon">◈</div><h3>Vault content is encrypted</h3><p>Photos, videos, thumbnails, Moment titles, notes and vault metadata are protected.</p></article>
     <article class="card half"><div class="icon">⌁</div><h3>Chunked media encryption</h3><p>Large media is encrypted in bounded chunks instead of one giant plaintext object.</p></article>
-    <article class="card half"><div class="icon">#</div><h3>PIN protects the vault key</h3><p>Your 6-digit PIN is not stored as readable text. Argon2id derives a Key Encryption Key that protects the randomly generated Vault Master Key.</p></article>
-    <article class="card half"><div class="icon">◎</div><h3>Face ID stays device-local</h3><p>Face ID provides convenient local unlocking. Your PIN remains the portable recovery credential for encrypted backups.</p></article>
+    <article class="card half"><div class="icon">#</div><h3>PIN protects the vault key</h3><p>Your vault PIN is not stored as readable text. Argon2id derives a Key Encryption Key that protects the randomly generated Vault Master Key.</p></article>
+    <article class="card half"><div class="icon">◎</div><h3>Face ID stays device-local</h3><p>Face ID provides convenient local unlocking. Encrypted backup and cross-device recovery use their supported recovery credentials; keep the required recovery information safe.</p></article>
   </div>
   <div class="arch"><div class="flow">
-    <div class="node"><strong>6-digit PIN</strong><span>Never stored as plaintext</span></div><div class="arrow">→</div>
+    <div class="node"><strong>Vault PIN</strong><span>Never stored as plaintext</span></div><div class="arrow">→</div>
     <div class="node"><strong>Argon2id</strong><span>Memory-hard key derivation</span></div><div class="arrow">→</div>
     <div class="node"><strong>KEK</strong><span>Key Encryption Key</span></div><div class="arrow">→</div>
     <div class="node"><strong>Vault Master Key</strong><span>Random 256-bit key protecting vault data</span></div>
@@ -85,7 +85,7 @@
   </div>
   <p class="notice" style="margin-top:34px"><strong>Security is a process.</strong> No software can truthfully promise that compromise is impossible. Hide Photos: Secret Album focuses on reducing exposure, using established cryptographic primitives, minimizing plaintext data, and using iOS platform security where appropriate. Last updated October 21, 2026.</p>
 </section>
-</main>
+<section class="section wrap" id="icloud-sync-security"><div class="section-head"><div class="kicker">Optional Pro feature</div><h2>Encrypted iCloud Sync</h2><p class="muted">Your vault remains local-first. If you enable Pro iCloud Sync, private content is encrypted on the device before being synchronized through your own Apple iCloud account, not a developer-operated vault storage server. The developer does not receive the keys needed to decrypt private vault content. Other supported devices require appropriate account access and recovery credentials. Sync is not a substitute for an independent encrypted backup. <a href="/private-moments/guide/encrypted-icloud-sync/">Read the iCloud Sync FAQ</a>.</p></div></section></main>
 <footer><div class="wrap footer-row">
   <span>© 2026 Hide Photos: Secret Album. Your private moments stay yours.</span>
   <span class="footer-links"><a href="/private-moments/security/">Security</a><a href="/private-moments/privacy/">Privacy</a><a href="/private-moments/support/">Support</a><a href="mailto:jet659521@gmail.com">Email: jet659521@gmail.com</a></span>
