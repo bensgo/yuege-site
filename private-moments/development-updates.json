@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "app": "hide-photos",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-29",
   "privacyNote": {
     "en": "Only development updates are shown here. Private feedback and personal information are never published.",
     "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
@@ -81,6 +81,31 @@
         "en": "Fix version: 1.7 (Released)",
         "zh-CN": "修复版本：1.7（已上线）"
       }
+    },
+    {
+      "id": "FEATURE-011",
+      "type": "feature",
+      "status": "in_progress",
+      "title": {
+        "en": "More app icon options",
+        "zh-CN": "增加更多 App 图标选择"
+      },
+      "summary": {
+        "en": "We received feedback asking for a better-looking app icon and more choices. We are improving the icon design and adding more alternative app icons to choose from.",
+        "zh-CN": "收到用户反馈，希望优化现有 App 图标并增加更多选择。目前正在优化图标设计，增加更多可切换的 App 图标，满足不同的外观偏好。"
+      },
+      "details": {
+        "en": "In development. The target version and release date are not yet determined.",
+        "zh-CN": "开发中，目标版本与上线时间待定。"
+      },
+      "updatedAt": "2026-10-29",
+      "releaseVersion": null,
+      "releaseStatus": "in_development",
+      "releaseLabel": {
+        "en": "In Development",
+        "zh-CN": "开发中"
+      },
+      "sortOrder": 0
     },
     {
       "id": "FEATURE-010",
