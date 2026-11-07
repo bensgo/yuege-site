@@ -8,6 +8,31 @@
   },
   "items": [
     {
+      "id": "BUG-004",
+      "type": "bug",
+      "status": "received",
+      "title": {
+        "en": "Video landscape mode unexpectedly returns to the main menu",
+        "zh-CN": "视频切换横屏时意外返回首页"
+      },
+      "summary": {
+        "en": "A user reported that attempting to switch a video to landscape mode returns them to the main menu instead of keeping the video open.",
+        "zh-CN": "收到用户反馈：播放视频时尝试切换为横屏模式，会意外返回应用首页，无法正常保持视频播放。"
+      },
+      "details": {
+        "en": "Reported and awaiting investigation and a fix. The affected conditions, target version and release date are not yet confirmed.",
+        "zh-CN": "已收到反馈，待排查和修复；具体触发条件、修复版本及上线时间尚未确定。"
+      },
+      "updatedAt": "2026-11-07",
+      "releaseVersion": null,
+      "releaseStatus": "received",
+      "releaseLabel": {
+        "en": "Reported · Pending Fix",
+        "zh-CN": "已收到 · 待修复"
+      },
+      "sortOrder": 0
+    },
+    {
       "id": "FEATURE-012",
       "type": "feature",
       "status": "released",
