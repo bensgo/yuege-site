@@ -224,3 +224,12 @@ img{max-width:100%}
 .localized-reviews .review-card{min-width:0}
 @media(max-width:800px){.localized-shots{grid-template-columns:repeat(2,minmax(0,1fr))}.localized-reviews{grid-template-columns:1fr}}
 @media(max-width:580px){.localized-shots{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;padding-bottom:12px}.localized-shots .experience-shot{flex:0 0 min(78vw,300px);scroll-snap-align:start}.locale-switcher{line-height:2.1}}
+
+/* Wi-Fi Transfer: actual in-app screenshot on locale landing and guide pages */
+.wifi-transfer-feature{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(180px,.65fr);gap:clamp(20px,3vw,40px);align-items:center}
+.wifi-transfer-copy{min-width:0}
+.wifi-transfer-screen{width:min(100%,315px);margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:11px}
+.wifi-transfer-screen img{display:block;width:100%;height:auto;max-width:315px;border-radius:22px;border:1px solid var(--line);box-shadow:0 20px 44px rgba(0,0,0,.25);background:#f6f4ef}
+.wifi-transfer-screen figcaption{font-size:13px;line-height:1.4;color:var(--muted);text-align:center}
+.wifi-transfer-proof .wifi-transfer-feature{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,40px)}
+@media(max-width:700px){.wifi-transfer-feature{grid-template-columns:minmax(0,1fr);gap:24px}.wifi-transfer-screen{width:min(100%,280px)}}
