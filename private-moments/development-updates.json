@@ -1,12 +1,37 @@
 {
   "schemaVersion": 1,
   "app": "hide-photos",
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-11-07",
   "privacyNote": {
     "en": "Only development updates are shown here. Private feedback and personal information are never published.",
     "zh-CN": "这里只展示问题修复与功能开发进度，不会公开用户反馈或个人信息。"
   },
   "items": [
+    {
+      "id": "FEATURE-012",
+      "type": "feature",
+      "status": "released",
+      "title": {
+        "en": "Wi-Fi Transfer for Windows and Mac (Pro)",
+        "zh-CN": "Wi-Fi 传输 Windows / Mac（Pro）"
+      },
+      "summary": {
+        "en": "Upload and download selected photos, videos and files between iPhone and computer browsers on local Wi-Fi. Pro required.",
+        "zh-CN": "已上线：Pro 用户可以在同一局域网使用 Windows / Mac 浏览器上传、下载照片、视频和文件。"
+      },
+      "details": {
+        "en": "Uses local HTTP without transport encryption. Use only on a trusted private network.",
+        "zh-CN": "通过局域网 HTTP 传输，网络传输不加密。请仅在可信私人网络使用。"
+      },
+      "updatedAt": "2026-11-07",
+      "releaseVersion": null,
+      "releaseStatus": "released",
+      "releaseLabel": {
+        "en": "Released (Pro)",
+        "zh-CN": "已上线（Pro）"
+      },
+      "sortOrder": 0
+    },
     {
       "id": "BUG-001",
       "type": "bug",
@@ -287,16 +312,16 @@
       "type": "feature",
       "status": "proposed",
       "title": {
-        "en": "Import files via USB and Wi-Fi",
-        "zh-CN": "支持通过 USB 和 Wi-Fi 添加文件"
+        "en": "USB file import (proposed)",
+        "zh-CN": "USB 文件导入（提案）"
       },
       "summary": {
-        "en": "Proposal: enable adding files via USB or Wi-Fi. Delivery date to be determined.",
-        "zh-CN": "希望通过 USB 或 Wi-Fi 向应用添加文件，已收到提案，完成时间待定。"
+        "en": "USB file import remains a proposal. Wi-Fi Transfer has been released for Pro.",
+        "zh-CN": "USB 导入仍处于提案阶段；Wi-Fi 传输已经作为 Pro 功能上线。"
       },
       "details": {
-        "en": "The feature has been proposed; implementation scope and schedule are not yet determined.",
-        "zh-CN": "该功能目前处于提案阶段，具体实现方式与完成时间尚未确定。"
+        "en": "USB scope and release date are not confirmed.",
+        "zh-CN": "USB 具体范围与上线时间尚未确定。"
       },
       "updatedAt": "2026-10-17",
       "releaseVersion": null,
