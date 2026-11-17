@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "app": {
+    "id": "vidkiva",
+    "name": "Vidkiva",
+    "website": "https://yuege.online/video-saver/",
+    "release_status": "pre_release"
+  },
+  "last_updated": "2026-11-17",
+  "default_locale": "en",
+  "locales": [
+    "en",
+    "zh-CN"
+  ],
+  "status_definitions": {
+    "completed": "Implemented in development; not necessarily available in a public App Store release.",
+    "in_progress": "Currently being developed or prepared.",
+    "planned": "Planned or under consideration; timing may change."
+  },
+  "updates": [
+    {
+      "id": "video-library-and-notes",
+      "type": "feature",
+      "status": "completed",
+      "title": {
+        "en": "Video library and in-video notes",
+        "zh-CN": "视频收藏库与视频内笔记"
+      },
+      "description": {
+        "en": "Organize saved videos and links in collections, and add notes at specific moments while watching.",
+        "zh-CN": "将保存的视频和链接整理到收藏夹，并在观看时为指定时间点添加笔记。"
+      }
+    },
+    {
+      "id": "picture-in-picture-and-background-audio",
+      "type": "feature",
+      "status": "completed",
+      "title": {
+        "en": "Picture in Picture and background audio",
+        "zh-CN": "画中画与后台音频"
+      },
+      "description": {
+        "en": "Implemented for local videos and supported direct video URLs. These capabilities are not promised for embedded YouTube playback.",
+        "zh-CN": "已针对本地视频和受支持的视频直链实现。YouTube 内嵌播放不承诺支持这些功能。"
+      }
+    },
+    {
+      "id": "youtube-embedded-playback",
+      "type": "feature",
+      "status": "completed",
+      "title": {
+        "en": "YouTube link previews and embedded playback",
+        "zh-CN": "YouTube 链接预览与内嵌播放"
+      },
+      "description": {
+        "en": "Save YouTube links with available metadata and watch using embedded playback. YouTube video downloading is not supported.",
+        "zh-CN": "保存 YouTube 链接及可获取的元数据，并通过内嵌播放器观看；不支持下载 YouTube 视频。"
+      }
+    },
+    {
+      "id": "pro-subscriptions",
+      "type": "development",
+      "status": "in_progress",
+      "title": {
+        "en": "Vidkiva Pro subscription experience",
+        "zh-CN": "Vidkiva Pro 订阅体验"
+      },
+      "description": {
+        "en": "Preparing subscription access and purchase restoration for premium playback and timeline-note features.",
+        "zh-CN": "正在完善高级播放与时间轴笔记等 Pro 功能的订阅解锁和恢复购买体验。"
+      }
+    },
+    {
+      "id": "traditional-chinese",
+      "type": "localization",
+      "status": "planned",
+      "title": {
+        "en": "Traditional Chinese localization",
+        "zh-CN": "繁体中文本地化"
+      },
+      "description": {
+        "en": "Traditional Chinese is planned in response to user requests. Availability will be confirmed in a future update.",
+        "zh-CN": "已收到用户对繁体中文的需求，计划在后续版本支持，具体上线时间以更新公告为准。"
+      }
+    }
+  ],
+  "feedback": {
+    "channel": {
+      "type": "email",
+      "address": "jet659521@gmail.com",
+      "url": "mailto:jet659521@gmail.com?subject=Vidkiva%20Feedback"
+    },
+    "items": [
+      {
+        "id": "traditional-chinese-request",
+        "status": "planned",
+        "updated_at": "2026-11-17",
+        "title": {
+          "en": "Request: Traditional Chinese support",
+          "zh-CN": "用户建议：支持繁体中文"
+        },
+        "response": {
+          "en": "Thanks for the suggestion. Traditional Chinese is on our near-term localization plan. Other ideas are welcome.",
+          "zh-CN": "感谢建议。繁体中文已列入近期本地化计划，也欢迎继续提出其他功能建议。"
+        }
+      }
+    ]
+  }
+}
