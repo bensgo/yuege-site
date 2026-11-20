@@ -1,0 +1,27 @@
+name: Vidkiva marketing checks
+on:
+  pull_request:
+    paths:
+      - 'video-saver/**'
+      - '.github/workflows/vidkiva-marketing.yml'
+  workflow_dispatch:
+jobs:
+  marketing:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate UTM links and App Store destination
+        run: node --test video-saver/tests/marketing.test.mjs
+      - name: Check required public marketing files
+        run: |
+          test -s video-saver/index.html
+          test -s video-saver/zh-CN/index.html
+          test -s video-saver/press/index.html
+          test -s video-saver/whats-new/index.html
+          test -s video-saver/MARKETING-README.md
+          ! grep -qi 'Coming soon</span>' video-saver/index.html
