@@ -1,0 +1,11 @@
+# Cloudflare Worker example — do not deploy without configuring the real account and route.
+# Rename to wrangler.toml, create the D1 database, and paste its actual database_id.
+name = "vidkiva-marketing-events"
+main = "worker.js"
+compatibility_date = "2026-11-20"
+# Route mapping depends on current DNS/hosting. Recommended:
+# routes = [{ pattern = "yuege.online/video-saver/api/marketing/event", zone_name = "yuege.online" }]
+# [[d1_databases]]
+# binding = "MARKETING_DB"
+# database_name = "vidkiva-marketing"
+# database_id = "<YOUR_REAL_DATABASE_ID>"
