@@ -56,6 +56,7 @@ Do not enable analytics by simply replacing the endpoint without deploying the W
 - No website PR merge/deploy or Store submission is automatic.
 
 ## Assets to import from app repository
+The authentic 1024×1024 app icon has already been copied to `video-saver/assets/icon-1024.png` and can be downloaded from the Press Kit. Only screenshot/recording/ZIP imports remain.
 See `bensgo/video_download` marketing asset checklist and tooling. Generate high-resolution raw captures, verify release version, and export assets. After verifying ownership/accuracy, commit icon, real screenshots and ZIP into `video-saver/assets/` in a separate media PR. Do not use CSS illustration as a press screenshot.
 
 ## Known manual steps
